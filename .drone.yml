@@ -1,0 +1,31 @@
+kind: pipeline
+name: default
+
+steps:
+
+  - name: alpine
+    image: plugins/docker
+    settings:
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      repo: xsteadfastx/tox-python
+      dockerfile: Dockerfile.alpine
+      tags:
+        - alpine
+        - minimal
+        - slim
+
+  - name: ubuntu
+    image: plugins/docker
+    settings:
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      repo: xsteadfastx/tox-python
+      dockerfile: Dockerfile.ubuntu
+      tags:
+        - ubuntu
+        - full
