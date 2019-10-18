@@ -1,8 +1,7 @@
+---
 kind: pipeline
 name: default
-
 steps:
-
   - name: alpine
     image: plugins/docker
     settings:
@@ -16,7 +15,10 @@ steps:
         - alpine
         - minimal
         - slim
-
+---
+kind: pipeline
+name: default
+steps:
   - name: ubuntu
     image: plugins/docker
     settings:
