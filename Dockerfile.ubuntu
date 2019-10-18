@@ -1,5 +1,5 @@
 FROM ubuntu:xenial as base
-ENV PY_VERSIONS="3.8.0 3.7.3 3.6.8 3.5.6 3.4.8 3.3.7 3.2.6 3.1.5 3.0.1 2.7.15 2.6.9 2.5.6 2.4.6 pypy3.6-7.1.1 pypy2.7-7.1.1"
+ENV PY_VERSIONS="3.8.0 3.7.4 3.6.8 3.5.6 3.4.8 3.3.7 3.2.6 3.1.5 3.0.1 2.7.15 2.6.9 2.5.6 2.4.6 pypy3.6-7.1.1 pypy2.7-7.1.1"
 ENV USER_ID=1000
 ENV GROUP_ID=1000
 ENV LANG C.UTF-8
